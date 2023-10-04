@@ -25,11 +25,11 @@ process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
-process.MessageLogger = cms.Service("MessageLogger",
-        destinations   = cms.untracked.vstring('detailedInfo'),
-        categories      = cms.untracked.vstring('eventNumber'),
-        detailedInfo    = cms.untracked.PSet(eventNumber = cms.untracked.PSet(reportEvery = cms.untracked.int32(1000))),
-)
+# process.MessageLogger = cms.Service("MessageLogger",
+#         destinations   = cms.untracked.vstring('detailedInfo'),
+#         categories      = cms.untracked.vstring('eventNumber'),
+#         detailedInfo    = cms.untracked.PSet(eventNumber = cms.untracked.PSet(reportEvery = cms.untracked.int32(1000))),
+# )
 
 process.genHToTauTauFilter = cms.EDFilter("GenHToTauTauFilter",
     src       = cms.InputTag("genParticles"), #GenParticles collection as input
@@ -40,7 +40,7 @@ process.genHToTauTauFilter = cms.EDFilter("GenHToTauTauFilter",
 )
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(50000)
+    input = cms.untracked.int32(10)
     # input = cms.untracked.int32(3000000)
 )
 

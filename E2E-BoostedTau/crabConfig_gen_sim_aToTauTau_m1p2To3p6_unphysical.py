@@ -17,14 +17,14 @@ config.Data.outputPrimaryDataset = 'aToTauTau_Hadronic_tauDR0p4_m1p2To3p6_pT30To
 
 # Define units per job here:
 config.JobType.allowUndistributedCMSSW = True
-config.JobType.eventsPerLumi=600
+config.JobType.eventsPerLumi=500
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 3000 # units: large number is given because aToTauTau has filters and cut on pt and eta
-NJOBS = 100
+config.Data.unitsPerJob = 1000 # units: large number is given because aToTauTau has filters and cut on pt and eta
+NJOBS = 1000
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
-config.Data.publication = False
+config.Data.publication = True
 
 # Output files will be stored in config.Site.storageSite at directory:
-config.Data.outLFNDirBase = '/store/user/bhbam/unphysical_sample_test'
-#config.Data.outLFNDirBase = '/store/group/lpcml/bbbam/MCGeneration'
+# config.Data.outLFNDirBase = '/store/user/bhbam/unphysical_sample_test'
+config.Data.outLFNDirBase = '/store/group/lpcml/bbbam/MCGeneration'
 config.Site.storageSite = 'T3_US_FNALLPC'

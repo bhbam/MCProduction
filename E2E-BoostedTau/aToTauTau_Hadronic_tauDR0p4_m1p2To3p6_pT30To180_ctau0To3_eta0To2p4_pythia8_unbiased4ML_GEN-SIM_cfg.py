@@ -104,7 +104,7 @@ process.generator = cms.EDFilter("Pythia8PtGunV3",
             'ProcessLevel:all = off',
             '25:new = PA void 1 0 0 2.4 1.5 1.2 3.6 0.',
             '25:oneChannel = 1 1.00 101 15 -15', # onMode bRatio meMode product1 product2
-            '15:new = PTau PTaubar 2 -3 0 0.6 0. 0. 0. 0.',# name antiName spinType chargeType colType m0 mWidth mMin mMax tau0
+            '15:new = PTau PTaubar 2 -3 0 0.57 0. 0. 0. 0.',# name antiName spinType chargeType colType m0 mWidth mMin mMax tau0
             #h- nu -->11.5%
             '15:oneChannel = 1 0.3 101 -211 16 ',
             # '15:addChannel = 1 0.1 101 -321 16 ',
@@ -130,7 +130,6 @@ process.generator = cms.EDFilter("Pythia8PtGunV3",
 
 # Path and EndPath definitions
 process.generation_step = cms.Path(process.pgen+process.GenHToTauTauFilter)
-# process.generation_step = cms.Path(process.pgen)
 process.simulation_step = cms.Path(process.psim)
 process.genfiltersummary_step = cms.EndPath(process.genFilterSummary)
 process.endjob_step = cms.EndPath(process.endOfProcess)
