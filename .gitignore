@@ -1,2 +1,6 @@
 *.root
 *.pyc
+*.log
+E2E-Data/
+crab_MC*
+

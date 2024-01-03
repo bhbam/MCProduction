@@ -85,3 +85,554 @@ Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ
 See the ./crab.log file for more details.
 The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
 INFO 2023-08-03 22:28:50.922 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-27 03:53:04.657 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-27 03:53:04.657 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-27 03:53:04.657 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-27 03:53:04.657 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-27 03:53:04.660 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-27 03:53:04.660 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-27 03:53:04.669 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-27 03:53:04.671 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3.7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-27 03:53:04.671 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3.7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-27 03:53:04.673 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 15:45:30.184 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 15:45:30.184 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 15:45:30.184 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 15:45:30.185 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 15:45:30.196 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 15:45:30.196 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-28 15:45:30.205 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-28 15:45:30.206 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-28 15:45:30.206 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-28 15:45:30.208 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 16:00:19.138 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 16:00:19.139 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 16:00:19.139 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 16:00:19.139 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 16:00:19.146 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 16:00:19.147 UTC: 	 Loading CRAB configuration file.
+ERROR 2023-08-28 16:00:19.155 UTC: 	 Invalid CRAB configuration: Parameter Data.unitsPerJob must be > 0, not 0.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2023-08-28 16:00:19.155 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 316, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.unitsPerJob must be > 0, not 0.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2023-08-28 16:00:19.156 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 16:03:19.682 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 16:03:19.682 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 16:03:19.682 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 16:03:19.683 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 16:03:19.684 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 16:03:19.684 UTC: 	 Loading CRAB configuration file.
+ERROR 2023-08-28 16:03:19.692 UTC: 	 Invalid CRAB configuration: Parameter Data.unitsPerJob must be > 0, not 0.1.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2023-08-28 16:03:19.692 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 316, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Data.unitsPerJob must be > 0, not 0.1.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2023-08-28 16:03:19.694 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 16:04:13.181 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 16:04:13.181 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 16:04:13.181 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 16:04:13.181 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 16:04:13.182 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 16:04:13.182 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-28 16:04:13.190 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-28 16:04:13.191 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-28 16:04:13.191 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-28 16:04:13.192 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 18:28:41.888 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 18:28:41.888 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 18:28:41.888 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 18:28:41.920 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 18:28:41.929 UTC: 	 Will use CRAB configuration file crabConfig_gen_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 18:28:41.929 UTC: 	 Loading CRAB configuration file.
+INFO 2023-08-28 18:28:41.956 UTC: 	 Wrong format in command-line argument '--dryrun'. Expected format is <section-name>.<parameter-name>=<parameter-value>.
+INFO 2023-08-28 18:28:41.956 UTC: 	 If the argument '--dryrun' is an option to the submit command, try 'crab submit --dryrun [value for --dryrun option (if required)] [arguments]'.
+ERROR 2023-08-28 18:28:41.956 UTC: 	 ERROR: Wrong command-line format.
+ERROR 2023-08-28 18:28:41.956 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 316, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 67, in loadConfig
+    raise ConfigurationException("ERROR: Wrong command-line format.")
+ConfigurationException: ERROR: Wrong command-line format.
+INFO 2023-08-28 18:28:41.958 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 18:47:26.283 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 18:47:26.283 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 18:47:26.283 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 18:47:26.283 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 18:47:26.295 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 18:47:26.295 UTC: 	 Loading CRAB configuration file.
+ERROR 2023-08-28 18:47:26.304 UTC: 	 The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2023-08-28 18:47:26.304 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 316, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: The 'dryrun' option is not compatible with the 'Automatic' splitting mode (default).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2023-08-28 18:47:26.305 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 18:48:43.709 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 18:48:43.709 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 18:48:43.709 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 18:48:43.709 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 18:48:43.711 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 18:48:43.711 UTC: 	 Loading CRAB configuration file.
+ERROR 2023-08-28 18:48:43.719 UTC: 	 Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2023-08-28 18:48:43.719 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 316, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 94, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: In case of Automatic splitting, the Data.unitsPerJob parameter must be in the [180, 2700] minutes range. You asked for 1 minutes.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+INFO 2023-08-28 18:48:43.721 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-28 18:50:13.560 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-28 18:50:13.560 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-28 18:50:13.560 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-28 18:50:13.560 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-28 18:50:13.562 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-28 18:50:13.562 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-28 18:50:13.571 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-28 18:50:13.572 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-28 18:50:13.572 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-28 18:50:13.574 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:37:06.911 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:37:06.911 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:37:06.911 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:37:06.911 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:37:06.937 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:37:06.937 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:37:06.946 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:37:06.947 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:37:06.947 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:37:06.949 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:48:13.426 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:48:13.426 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:48:13.426 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:48:13.426 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:48:13.436 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:48:13.436 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:48:13.437 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:48:13.438 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:48:13.438 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:48:13.439 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:49:25.582 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:49:25.583 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:49:25.583 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:49:25.583 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:49:25.584 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:49:25.584 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:49:25.585 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:49:25.585 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:49:25.585 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:49:25.587 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:52:12.852 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:52:12.852 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:52:12.852 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:52:12.853 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:52:12.854 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:52:12.854 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:52:12.858 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:52:12.858 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:52:12.858 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:52:12.860 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:58:40.584 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:58:40.584 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:58:40.584 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:58:40.585 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:58:40.592 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:58:40.593 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:58:40.594 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:58:40.595 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:58:40.595 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:58:40.596 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-29 03:59:45.973 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-29 03:59:45.973 UTC: 	 Running on: Linux cmslpc102.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-29 03:59:45.973 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-29 03:59:45.973 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-29 03:59:45.975 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-29 03:59:45.975 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-29 03:59:45.983 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-29 03:59:45.985 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-29 03:59:45.985 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-29 03:59:45.987 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-30 19:11:29.095 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-30 19:11:29.096 UTC: 	 Running on: Linux cmslpc112.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-30 19:11:29.096 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-30 19:11:29.100 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-30 19:11:29.123 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-30 19:11:29.123 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-30 19:11:29.145 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-30 19:11:29.146 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-30 19:11:29.147 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-30 19:11:29.151 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-31 19:02:10.580 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-31 19:02:10.580 UTC: 	 Running on: Linux cmslpc165.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-31 19:02:10.580 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-31 19:02:10.580 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-31 19:02:10.582 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-31 19:02:10.582 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-31 19:02:10.590 UTC: 	 Will use CRAB PrivateMC plugin (i.e. will run a MC generation job type).
+ERROR 2023-08-31 19:02:10.591 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-31 19:02:10.591 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-31 19:02:10.593 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-31 19:16:51.268 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-31 19:16:51.268 UTC: 	 Running on: Linux cmslpc165.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-31 19:16:51.268 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-31 19:16:51.269 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-31 19:16:51.271 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-31 19:16:51.271 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-31 19:16:51.279 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-31 19:16:51.280 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-31 19:16:51.280 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-31 19:16:51.282 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-31 19:51:53.289 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-31 19:51:53.290 UTC: 	 Running on: Linux cmslpc165.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-31 19:51:53.290 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-31 19:51:53.290 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-31 19:51:53.292 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-31 19:51:53.292 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-31 19:51:53.300 UTC: 	 Will use CRAB PrivateMC plugin (i.e. will run a MC generation job type).
+ERROR 2023-08-31 19:51:53.301 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-31 19:51:53.301 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-31 19:51:53.302 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-31 20:49:18.920 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-31 20:49:18.920 UTC: 	 Running on: Linux cmslpc165.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-31 20:49:18.920 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-31 20:49:18.921 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-31 20:49:18.922 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-31 20:49:18.922 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-31 20:49:18.930 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-31 20:49:18.930 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-31 20:49:18.930 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-31 20:49:18.932 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-08-31 21:20:11.175 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-08-31 21:20:11.176 UTC: 	 Running on: Linux cmslpc165.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-08-31 21:20:11.176 UTC: 	 Executing command: 'submit'
+DEBUG 2023-08-31 21:20:11.176 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-08-31 21:20:11.190 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-08-31 21:20:11.191 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-08-31 21:20:11.200 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-08-31 21:20:11.200 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test_2/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-08-31 21:20:11.200 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test_2/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-08-31 21:20:11.202 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-09-05 06:47:21.028 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-09-05 06:47:21.028 UTC: 	 Running on: Linux cmslpc124.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-09-05 06:47:21.028 UTC: 	 Executing command: 'submit'
+DEBUG 2023-09-05 06:47:21.029 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-09-05 06:47:21.035 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-09-05 06:47:21.035 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-09-05 06:47:21.046 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-09-05 06:47:21.047 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test_3/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-09-05 06:47:21.047 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC_test_3/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-09-05 06:47:21.050 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-09-07 18:01:26.007 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-09-07 18:01:26.007 UTC: 	 Running on: Linux cmslpc147.fnal.gov 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 08:37:40 CST 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-09-07 18:01:26.007 UTC: 	 Executing command: 'submit'
+DEBUG 2023-09-07 18:01:26.008 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
+INFO 2023-09-07 18:01:26.032 UTC: 	 Will use CRAB configuration file crabConfig_sim_HToAATo4Tau_hadronic.py
+DEBUG 2023-09-07 18:01:26.032 UTC: 	 Loading CRAB configuration file.
+DEBUG 2023-09-07 18:01:26.833 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2023-09-07 18:01:26.834 UTC: 	 Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+ERROR 2023-09-07 18:01:26.834 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 159, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/bin/crab.py", line 144, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.230612.00/lib/CRABClient/ClientUtilities.py", line 387, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab_MC/crab_sim_HToAATo4Tau_Hadronic_tauDR0p4_M3p7_ctau0To3_eta0To2p4_pythia8_2018UL' already exists 
+Please change the requestName in the config file
+INFO 2023-09-07 18:01:26.836 UTC: 	 Log file is /uscms_data/d3/bbbam/analysis/MCGeneration/CMSSW_10_6_20/src/MCProduction/E2E-HToAATo4Tau/crab.log
+DEBUG 2023-09-17 15:41:45.341 UTC: 	 CRAB Client version: v3.230612
+DEBUG 2023-09-17 15:41:45.341 UTC: 	 Running on: Linux cmslpc145.fnal.gov 3.10.0-1160.99.1.el7.x86_64 #1 SMP Tue Aug 29 10:43:19 CDT 2023 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux 7.9 (Nitrogen)
+DEBUG 2023-09-17 15:41:45.341 UTC: 	 Executing command: 'resubmit'
+DEBUG 2023-09-17 15:41:45.341 UTC: 	 Found CRAB cache file /uscms/home/bbbam/.crab3
