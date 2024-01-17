@@ -20,7 +20,6 @@ config.General.transferLogs    = True
 
 # CMS cfg file goes here:
 config.JobType.pluginName  = 'Analysis' # mass > 8 use this
-# config.JobType.pluginName  = 'PrivateMC' # mass <10 use this
 
 config.JobType.psetName    = 'sim_HToAATo4Tau_RunIISummer20UL18_00066_1_withPU_cfg.py' # cms cfg file for generating events
 config.JobType.maxMemoryMB = 5000 #5000

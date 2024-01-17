@@ -3,4 +3,4 @@
 *.log
 E2E-Data/
 crab_MC*
-
+*.log
